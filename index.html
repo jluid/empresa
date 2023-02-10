@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./empresa.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Document</title>
+</head>
+<body  style="cursor:pointer">
+    <div class="menu_principal">
+        
+        <div class="div_imglogo">
+            <img src="./imagenes/logo2.png" alt="">
+        </div>
+        <div class="div_barrabusqueda">
+            <input type="search" placeholder="¿Qué estas buscando?">
+            <button style="cursor:pointer">
+                <span class="material-icons" id="btn_busqueda">
+                    search
+                </span>
+            </button>
+        </div>
+        <div class="div_opciones">
+            <div class="div_isesion" id="div_isesion" >
+                <span class="material-icons" id="icon_isesion">
+                    account_circle
+                </span>  
+                
+                 
+            </div>
+            <div class="div_carrito" id="div_carrito">
+                <span class="material-icons" id="icon_carrrito">
+                    local_shipping
+                </span>
+                
+            </div>
+            <div class="div_carritocompras" id="div_carritocompras">
+                <span class="material-icons" id="icon_carritocompras">
+                    shopping_cart
+                </span>
+               
+            </div>
+            
+        </div>
+        <!---->
+       
+    </div>
+    
+    <div class="submenu">
+        <ul class="lish_categorias"> 
+            <li><a href="#" id="s_hombres">Hombres</a></li>
+            <li><a href="#" id="s_mujeres">Mujeres</a></li>
+            <li><a href="#" id="s_niños">Niños</a></li>
+            <li><a href="#" id="s_niñas">Niñas</a></li>
+            <li><a href="#" id="s_marcas" >Marcas</a></li>
+        </ul>
+    </div>
+    
+    <div class="div_login" id="div_login" style="display:none">
+        <form action=""  id="form_login">
+            <div class="div_elogin">
+                <img src="./imagenes/logo.jpg" alt="">
+                <h1>Inicia sesión</h1>
+                    <span class="material-icons" id="iconcerrar_login">
+                        close
+                    </span>
+                <br>
+                
+            </div>  
+           <label for="id" >Identificación</label>
+            <input type="text" id="id" placeholder="Ingrese su identificación">
+            
+            
+            <label for="contraseña">contraseña</label>
+            
+            
+            <input type="password" id="contraseña" placeholder="Ingrese su contraseña">
+            
+            
+            <button type="submit" >INGRESAR</button>
+            
+            <pre>
+                        O
+                ¿No tienes cuenta?
+            </pre>
+            <p class="label_3" id="lbl_registrate"><u>Registrate</u></p>
+        </form>
+    </div>
+    <div class="div_formulario" style="display:none" id="div_formulario">
+        <form >
+            <div class="div_encabezadoform">
+                <span class="material-icons" id="cerrar_formulario">
+                    close
+                </span>
+                <img src="./imagenes/logo.jpg" alt="">
+                <h1>Regístro nuevo</h1> 
+            </div>
+           
+            <label for="id">Identificación</label>
+            <input type="tel" id="id" name="user_id" max="10" required (en-US) placeholder="Ingresa tu identificación">
+    
+            <label for="primer_nombre">Nombre</label>
+            <input type="text" id="primer_nombre" name="user_nombre" required placeholder="Ingresa tu nombre">
+        
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" name="user_apellido" required placeholder="Ingresa tu apellido">
+        
+        
+            <label for="fecha_nac">Fecha nacimiento</label>
+            <input type="date" id="fecha_nac" name="fecha_nac"  required>
+        
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="user_correo" required placeholder="Ingresa tu correo">
+        
+            <label for="conf_correo">Correo electrónico</label>
+            <input type="email" id="conf_correo" name="user_cofcorreo" placeholder="Vuelve a ingresa tu correo">
+        
+            <label for="contraseña">Contraseña</label>
+            <input type="password" id="contraseña" name="user_contraseña" required placeholder="Ingresa tu contraseña">
+        
+            <label for="contraseña">Contraseña</label>
+            <input type="password" id="contraseña" name="user_confcontraseña" required placeholder="Vuelve a ingresar tu contraseña">
+        
+        
+            <button type="submit" >Enviar</button>
+        </form>
+    </div>
+    <div class="div_cuerpo" >
+        <div class="div_slider" >
+            <ul>
+                <li><img src="./imagenes/slider1.jpg" alt=""></li>
+                <li><img src="./imagenes/slider2.jpg" alt=""></li>
+                <li><img src="./imagenes/slider3.jpg" alt=""></li>
+                <li><img src="./imagenes/slider4.jpg" alt=""></li>
+                <li><img src="./imagenes/slider5.jpg" alt=""></li>
+            </ul>
+        </div>
+        
+       
+        <h2>
+            <span class="material-icons">
+                grade
+            </span>
+            Destacados
+        </h2>
+       
+        <div class="div_destacados">
+            <div class="producto_1">
+                <img src="./imagenes/producto1.jpg" alt="">
+                <label class="lbl_marca" for="">Puma</label>
+                <label for="">zapatillas puma casual para hombre</label>
+                <p>$259,900</p>
+                <button>agregar al carrito</button>
+            </div>
+            <div class="producto_2">
+                <img src="./imagenes/producto2.jpg" alt="">
+                <label class="lbl_marca" for="">Rebook</label>
+                <label for="">Rebook lite 3.0 tenis de hombre </label>
+                <p>$159,900</p>
+                <button>agregar al carrito</button>
+            </div>
+            <div class="producto_3">
+                <img src="./imagenes/producto3.jpg" alt="">
+                <label class="lbl_marca" for="">Adidas</label>
+                <label for="">zapatillas deportivas marca adidas</label>
+                <p>$289,900</p>
+                <button>agregar al carrito</button>
+            </div>
+            <div class="producto_4">
+                <img src="./imagenes/producto4.jpg" alt="">
+                <label class="lbl_marca" for="">Puma</label>
+                <label for="">zapatos puma casual para hombre</label>
+                <p>$179,900</p>
+                <button>agregar al carrito</button>
+            </div>
+            <div class="producto_5">
+                <img src="./imagenes/producto5.jpg" alt="">
+                <label class="lbl_marca"> Nike</label>
+                <label for="">zapatillas deportivas nike suketoII</label>
+                <p>$269,900</p>
+                <button>agregar al carrito</button>
+            </div>
+            <div class="producto_6">
+                <img src="./imagenes/producto6.jpg" alt="">
+                <label class="lbl_marca" for="">New Balance</label>
+                <label for="">zapatillas deportivas mujer  new balance</label>
+                <p>$189,900</p>
+                <button>agregar al carrito</button>
+            </div>
+            <div class="producto_7">
+                <img src="./imagenes/producto7.jpg" alt="">
+                <label class="lbl_marca"> Nike</label>
+                <label for="">zapatillas deportivas nike zoom</label>
+                <p>$279,900</p>
+                <button>agregar al carrito</button>
+            </div>
+            <div class="producto_8">
+                <img src="./imagenes/producto8.jpg" alt="">
+                <label class="lbl_marca" for="">Lacoste</label>
+                <label for="">zapatos casuales unisex lacoste de lona</label>
+                <p>$199,900</p>
+                <button>agregar al carrito</button>
+            </div>
+        </div>
+        <div class="div_shombres" id="div_shombres" style="display: none"></div>
+        <div class="div_smujeres" id="div_smujeres"></div>
+        <div class="div_niños" id="div_niños"></div>
+        <div class="div_niñas" id="div_niñas"></div>
+        <div class="div_smarcas" id="div_smarcas"></div>
+        <div class="div_datos">
+            <p>contactanos 018000980898 o www.sshop@hotmail.com</p>
+            <div class="div_redes">
+                <button>
+                    <img src="./imagenes/facebook.png" alt="">
+                </button>
+                <button>
+                    <img src="./imagenes/instagram.png" alt="">
+                </button>
+                <button>
+                    <img src="./imagenes/twiter.png" alt="">
+                </button>
+                
+                
+            </div>
+        </div>
+        
+    </div>
+
+</body>
+</html>
